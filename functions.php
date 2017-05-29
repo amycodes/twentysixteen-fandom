@@ -11,4 +11,15 @@ function fandom_comm__enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'fandom_comm__enqueue_styles' );
+
+// removes the user page select meta-box for user roles that are not admins
+add_action( 'admin_menu', 'restrict_access' );
+function restrict_access() {
+// if the user is not admin - you can add any user roles or multiple roles
+if(!current_user_can('administrator')){
+   // Not tested but think this is the correct code for page template meta-box
+   remove_meta_box( 'pageparentdiv', 'fanfic','normal' );
+   }
+}
+
 ?>

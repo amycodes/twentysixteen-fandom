@@ -11,3 +11,40 @@
  Tags:         Accessibility Ready, Blog, Custom Background, Custom Header, Custom Menu, Editor Style, Featured Images, Flexible Header, Footer Widgets, Full Width Template, Left Sidebar, Microformats, News, Post Formats, Right Sidebar, RTL Language Support, Sticky Post, Theme Options, Three Columns, Translation Ready, Two Columns
  Text Domain:  twentysixteen-fandom
 */
+
+/* Header CSS */
+.site-branding a.custom-logo-link,
+.site-branding .site-branding-title {
+  float:left;
+  width:auto;
+}
+
+#masthead {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pinned {
+  padding:1em;
+  border: thin dashed lightgray;
+}
+
+.pinned footer{
+  font-size: .75em;
+  text-align:right;
+}
+
+.latest-fanfics ol {
+  width: 45%;
+  float:left;
+}
+
+.latest-fanfics span.fic-details {
+  font-size:.75em;
+}
+
+.latest-fanfics .fanfics-link {
+  width:100%;
+  text-align:right;
+  float:left;
+}
